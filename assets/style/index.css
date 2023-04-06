@@ -21,7 +21,7 @@ header {
 }
 
 header a:hover {
-    color: #ffc0ad;
+    color: #020826;
 }
 
 nav {
@@ -52,13 +52,13 @@ nav .toggle-btn {
 }
 
 .action-btn {
-    background-color: #ffc0ad;
+    background-color: #f25042;
     color: #fff;
     padding: 0.5rem 1rem;
     border: none;
     outline: none;
-    border-radius: 20px;
-    font-size: 0.8rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
     transition: scale 0.2s ease-in-out;
@@ -146,7 +146,7 @@ nav .toggle-btn {
     font-size: 1rem;
 }
 
-.full-img a:hover {
+.icons a:hover {
     color: #55423d;
 }
 
@@ -183,7 +183,7 @@ nav .toggle-btn {
     margin-bottom: 1.2rem;
 }
 .hero-banner h2 span {
-    color:#ffc0ad;
+    color:#f25042;
     font-size: 5rem;
 }
 
@@ -202,11 +202,33 @@ nav .toggle-btn {
     margin-left: 1rem;
 }
 
+.hero-banner button a {
+    background-color:#f25042;
+    color: #fffffe;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: scale 0.2s ease-in-out;
+    border: none;
+    outline: none;
+}
+
+.hero-banner button:hover {
+    scale: 1.05;
+    color: #fff;
+}
+
+.hero-banner button:active {
+    scale: 0.95;
+}
+
 /* ---------------------------- */
 /* MAP BOX                      */
 /* ---------------------------- */
 .map {
-    background-color: #fff3ec;
+    background-color: #eaddcf;
     padding: 3rem;
 }
 .map h2 {

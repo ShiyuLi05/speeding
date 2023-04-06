@@ -18,11 +18,13 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiY2F0Y2gyMi0iLCJhIjoiY2xnNWd6Y3VyMDNoMzNsbzd1N
 const map = new mapboxgl.Map({
     container: 'map',
     /*style:'mapbox://styles/catch22-/clg5h7tct008j01o2v2uvyld2',*/
-    style: 'mapbox://styles/mapbox/streets-v11'
+    style: 'mapbox://styles/mapbox/streets-v11',
+    center: [0, 0],
+    projection: 'globe'
 });
 
 const marker = new mapboxgl.Marker()
-    .setLngLat([-97.19, 49.79]) 
+    .setLngLat([-97.19, 49.8]) 
     .addTo(map);
 
 let long = '';
@@ -38,7 +40,7 @@ const getLocation = () => new Promise((resolve, reject) => {
             console.log([long, lat]);
             map.flyTo({
                 center: location,
-                zoom: 14,
+                zoom: 17,
                 speed: 0.8,
                 essential: true
             })
