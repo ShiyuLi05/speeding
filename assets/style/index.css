@@ -20,7 +20,7 @@ header {
     background-color: #7C6F5B;
 }
 
-header a:hover {
+.links a:hover {
     color: #020826;
 }
 
